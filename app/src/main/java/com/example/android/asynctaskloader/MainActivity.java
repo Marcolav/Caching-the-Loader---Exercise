@@ -189,7 +189,7 @@ public class MainActivity extends AppCompatActivity implements
                  * If we already have cached results, just deliver them now. If we don't have any
                  * cached results, force a load.
                  */
-                Log.d("Marcolav", "start: "+mGithubJson);
+                Log.d("Test", "Start: "+mGithubJson);
                 if (mGithubJson != null) {
                     deliverResult(mGithubJson);
                 } else {
@@ -224,7 +224,7 @@ public class MainActivity extends AppCompatActivity implements
             @Override
             public void deliverResult(String githubJson) {
                 mGithubJson = githubJson;
-                Log.d("Marcolav", "deliver: "+mGithubJson);
+                Log.d("Test", "Deliver: "+mGithubJson);
                 super.deliverResult(githubJson);
             }
         };
